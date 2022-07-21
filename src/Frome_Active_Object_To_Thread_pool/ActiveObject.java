@@ -41,7 +41,6 @@ public class ActiveObject {
     }
 
     public void shutDown(){
-        stop=true;
         execute(() -> stop=true);
 
     }
