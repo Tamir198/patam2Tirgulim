@@ -1,9 +1,8 @@
 package Frome_Active_Object_To_Thread_pool;
 
+
 import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingDeque;
 import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.Future;
 //Mimic Thread pool
 public class MyThreadPool {
     //Generate thread safe data structure, this is Active object type
@@ -92,8 +91,14 @@ public class MyThreadPool {
 
     }
 
-    public void submit (){
-//        Future<V> res = new Future<>();
+    public <V>  Future<V> submit (Callable<V> c){
+        Future<V> res = new Future<>();
+        //() -> execute runnable, return the future on the spot
+        //execute accept runnable that run call() abd put the return value from call inside
+        //The future
+        execute(() -> res.set(c.call()));
+
+        return res;
     }
 
 }
