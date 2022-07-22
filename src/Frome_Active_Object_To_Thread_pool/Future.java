@@ -38,7 +38,7 @@ public class Future<V> {
     }
 
     //This function will return Future<R> immediately
-    //only after V will arrive this function will execute V and put the resault in
+    //only after V will arrive this function will execute V and put the result in
     //The future that we are returning
     public <R> Future<R> thenApply(Function<V,R> f){
         Future<R> future = new Future<>();
