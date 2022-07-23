@@ -1,1 +1,2 @@
 Exam 2 - question about ParallelStreamer (Threads) and pearson (code optimization)
+Exam 4 - question about binary expression with fork join pool, code optimization about averages
