@@ -34,7 +34,7 @@ public class Q1b {
 	}
 	
 	public void close(){
-		stop = true;
-		thread.interrupt();
+		//We do this to make sure that the thread will get closed after all the tasks
+		queue.add(()->stop=true);
 	}
 }
