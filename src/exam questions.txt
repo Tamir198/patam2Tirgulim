@@ -16,3 +16,6 @@ Exam 5 - question 1 about futures,
 		// submit also puts the object in the queue, and returns Future<Integer>
 		return es.submit(callable);
 	}
+	
+	
+	//Submit need callable as param
