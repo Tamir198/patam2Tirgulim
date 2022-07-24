@@ -1,8 +1,8 @@
 Exam 2 - question about ParallelStreamer (Threads) and pearson (code optimization)
 Exam 4 - question about binary expression with fork join pool, code optimization about averages
 Exam 5 - question 1 about futures, 
-		 question 1.2 about 
-		 question 2 about 
+		 question 1.2 a.b about mimicing active object
+		 question 2 a.c about recursive with futures, something similar to binary search 
 		 question 3 about code optimization with strings
 
 
