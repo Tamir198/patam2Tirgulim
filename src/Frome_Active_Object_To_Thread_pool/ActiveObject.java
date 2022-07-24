@@ -1,7 +1,6 @@
 package Frome_Active_Object_To_Thread_pool;
 
 import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingDeque;
 import java.util.concurrent.BlockingQueue;
 
 public class ActiveObject {
@@ -42,7 +41,6 @@ public class ActiveObject {
 
     public void shutDown(){
         execute(() -> stop=true);
-
     }
 
     public int size(){

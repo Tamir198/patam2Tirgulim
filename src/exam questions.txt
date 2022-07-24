@@ -1,2 +1,18 @@
 Exam 2 - question about ParallelStreamer (Threads) and pearson (code optimization)
 Exam 4 - question about binary expression with fork join pool, code optimization about averages
+Exam 5 - question 1 about futures, 
+		 question 1.2 about 
+		 question 2 about 
+		 question 3 about code optimization with strings
+
+
+
+
+
+
+
+	//How to run something in background and return future
+	public <V> Future<V> threadIt(Callable<V> callable){
+		// submit also puts the object in the queue, and returns Future<Integer>
+		return es.submit(callable);
+	}
