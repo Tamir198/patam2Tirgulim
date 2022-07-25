@@ -6,6 +6,12 @@ Exam 5 - question 1 about futures,
 		 question 3 about code optimization with strings
 
 
+Exam 6 - 
+		question 1 - Future question with some parallel tasker
+		question 2 - Generic singleton using double check lock
+		question 3 - some distance code optimization
+
+
 
 
 
@@ -19,3 +25,5 @@ Exam 5 - question 1 about futures,
 	
 	
 	//Submit need callable as param
+	
+	//RecursiveTask<Integer> - rememebr to enter type with recursive task
