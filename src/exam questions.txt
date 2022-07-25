@@ -27,3 +27,28 @@ Exam 6 -
 	//Submit need callable as param
 	
 	//RecursiveTask<Integer> - rememebr to enter type with recursive task
+	
+	
+	//THIS IS HOW YOU IMPLEMENT FUTURE:
+	public class MyFuture<V> {
+    V value;
+    Runnable r;
+
+    public MyFuture() {
+        r = new Thread(() ->{});
+    }
+
+    public void set(V value) {
+        this.value=value;
+        r.run();
+    }
+
+    public <R> MyFuture<R> thenDo(Function<V, R> func) {
+        MyFuture<R> myFuture=new MyFuture<>();
+        r=()->myFuture.set(func.apply(value));
+        return myFuture;
+    }
+    public void finallyDo(Consumer<V> c) {
+        r=()->c.accept(value);
+    }
+}

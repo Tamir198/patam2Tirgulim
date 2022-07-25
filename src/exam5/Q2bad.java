@@ -1,8 +1,16 @@
 package exam5;
 
+import java.util.ArrayList;
+
 public class Q2bad {
-	
-		public static int H(String a, String b){
+	ArrayList<Double> x,y;
+
+	public Q2bad(ArrayList<Double> x, ArrayList<Double> y) {
+		this.x = x;
+		this.y = y;
+	}
+
+	public static int H(String a, String b){
 		int sum=0;
 		for(int i=0;i<Math.min(a.toCharArray().length,b.toCharArray().length);i++){
 			if(a.toCharArray()[i]!=b.toCharArray()[i])
