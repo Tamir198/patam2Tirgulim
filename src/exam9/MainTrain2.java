@@ -22,7 +22,7 @@ public class MainTrain2 {
 			t0.join();
 			t1.join();
 		} catch (InterruptedException e) {}
-		
+
 		if(c.get()!=d*2) {
 			System.out.println("wrong result (-30)");
 			System.out.println(c.get() +" "+d*2);

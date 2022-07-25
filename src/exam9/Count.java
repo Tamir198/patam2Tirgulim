@@ -1,17 +1,20 @@
 package exam9;
 
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class Count {
-	int count;
-	public Count() {
-		count=0;
-	}
-	
-	public  void inc() {
-		count++;
-	}
-	
-	public int get() {
-		return count;
-	}
+    AtomicInteger count;
+
+    public Count() {
+        count = new AtomicInteger(0);
+    }
+
+    public void inc() {
+      count.incrementAndGet();
+    }
+
+    public int get() {
+        return count.get();
+    }
 }

@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Q2good {
+
+
     List<Double> X,Y;
 
     public Q2good(List<Double> X, List<Double> Y) {
