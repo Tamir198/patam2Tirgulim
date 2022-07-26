@@ -2,8 +2,6 @@ package exam12;
 
 import java.util.Observable;
 import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 public class ObservableFuture<V> extends Observable {

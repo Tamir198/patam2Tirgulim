@@ -12,6 +12,43 @@ Exam 6 -
 		question 3 - some distance code optimization
 
 
+Exam 7 - 
+		question 1 - Recursive question FJ_GCD
+		question 2 - Implement fold and map
+		question 3 - geoMedian and EucDistance optimization
+		
+Exam 8 - 
+		question 1 - Implement future with thenDo finallyDo set
+		question 2 - Enthropy - question from hell
+		
+Exam 9 - 
+		question 1 - Thread questions, how so use threads without synchronized 
+					 The answer is to use "Atomic" things
+		question 2 - Implement Pipe with add filter forEach map and stop
+		question 3 - Optimize most common number(grade) withing an array
+		
+Exam 10 - 
+		question 1 - MyTimer question(threads) - run task x time per second
+		question 2 - ControllerMaker - singleton question
+		question 3 - Optimize point distance from circles(check if point is in circle)
+
+Exam 11 - 
+		question 1 - Tasker - thread question with hashmap (I failed at this)
+		question 2 - ParMaxSearcher - Bin tree recursive question
+		question 3 - Optimize fold method (extract variable with code motion)
+		
+Exam 12 - 
+		question 1 - ObservableFuture - create future with obserable to mimic get
+		question 2 - Par - recursive task to find sum of nodes in tree
+		question 3 - Optimize maximum value in bool matrix (
+			TENARY IS FASTER THAN IF ELSE
+		)
+		
+Exam 13 - 
+		question 1 - 
+		question 2 - 
+		question 3 - 
+
 
 
 
@@ -29,7 +66,7 @@ Exam 6 -
 	//RecursiveTask<Integer> - rememebr to enter type with recursive task
 	
 	
-	//THIS IS HOW YOU IMPLEMENT FUTURE:
+	//**********THIS IS HOW YOU IMPLEMENT FUTURE:**********
 	public class MyFuture<V> {
     V value;
     Runnable r;
