@@ -1,4 +1,4 @@
-package test;
+package exam7;
 
 import exam7.FJ_GCD;
 
