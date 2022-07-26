@@ -45,14 +45,9 @@ Exam 12 -
 		)
 		
 Exam 13 - 
-		question 1 - 
-		question 2 - 
-		question 3 - 
-
-
-
-
-
+	
+	
+		question 3 - softmaxOpt code optimization
 
 	//How to run something in background and return future
 	public <V> Future<V> threadIt(Callable<V> callable){
