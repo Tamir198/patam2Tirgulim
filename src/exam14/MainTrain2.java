@@ -1,4 +1,4 @@
-package test;
+package exam14;
 
 
 import java.util.Arrays;
@@ -16,10 +16,10 @@ public class MainTrain2 {
 		int num = r.ints(2,25).findFirst().getAsInt();
 		LucasNumbers luc = new LucasNumbers(num);
 		List<Integer> lnl = Arrays.asList(2,1,3,4,7,11,18,29,47,76,123,199,322,521,843,1364,2207,3571,5778,9349,15127,24476,39603,64079,103682,167761);
-		
+
 		ForkJoinPool fjp=new ForkJoinPool();
 		Future<Integer> lucasNum=fjp.submit(luc);
-		
+
 		fjp.shutdown();
 		boolean ok=true;
 		try {
@@ -32,7 +32,7 @@ public class MainTrain2 {
 			System.out.println("you got an exception while waiting for termination (-30)");
 		}
 		int check = lnl.get(num);
-		
+
 		if(ok) {
 			try {
 				if(lucasNum.get()!=check)
@@ -40,11 +40,11 @@ public class MainTrain2 {
 			} catch (InterruptedException | ExecutionException e) {
 				System.out.println("exception in future get (-20)");
 			}
-			
+
 			if(fjp.getStealCount()<=1)
 				System.out.println("you didn't use the threads correctly (-10)");
 		}
-		
+
 		System.out.println("done");
 	}
 

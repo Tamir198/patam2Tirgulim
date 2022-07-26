@@ -45,9 +45,14 @@ Exam 12 -
 		)
 		
 Exam 13 - 
-	
-	
+		question 1 - Count thread question how to sync threads without synchronized
+		question 2 - Threads question - implement LinkedList<BlockingQueue<Runnable>>	
 		question 3 - softmaxOpt code optimization
+		
+Exam 14 - 
+		question 1 - parallelCountIf threads question with predicat
+		question 2 - Recursive question about LucasNumbers (similar to fibonachi)
+		question 3 - Adjasting average code optimization
 
 	//How to run something in background and return future
 	public <V> Future<V> threadIt(Callable<V> callable){
@@ -55,6 +60,7 @@ Exam 13 -
 		return es.submit(callable);
 	}
 	
+	//If we want to wait for thread to die use join method
 	
 	//Submit need callable as param
 	

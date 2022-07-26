@@ -1,4 +1,4 @@
-package test;
+package exam14;
 
 public class ThreadCounter extends Thread {
 

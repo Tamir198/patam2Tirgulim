@@ -1,4 +1,4 @@
-package test;
+package exam14;
 
 import java.util.LinkedList;
 import java.util.Queue;
